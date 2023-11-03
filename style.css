@@ -18,11 +18,158 @@
 }
 
 /***** TAG SELECTOR *****/
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    
 
+}
+h1 {
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', sans-serif;
 
+}
+
+img {
+    padding-bottom: 15px;
+}
 
 /***** CLASS SELECTOR *****/
+.container{
+    display: flex;
+    
+    
+}
+
+/* CARDS */
+
+.card1 {
+    background-color: var(--Bright-orange);
+    border-radius: 8px 0 0 8px;
+    padding: 45px 35px 45px 40px;
+}
+
+.card2 {
+    background-color: var(--Dark-cyan);
+    padding: 45px 35px 45px 40px;
+}
+
+.card3 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 8px 8px 0;
+    padding: 45px 35px 45px 40px;
+}
 
 
+/* HEADINGS */
+.sedans .suvs .luxury{
+    font-size: large;
+}
+
+.text {
+    color: var(--Transparent-white);
+    font-size: 15px;
+    line-height: 1.7;
+    padding-bottom: 76px;
+    width: 212px;
+}
+
+/* BUTTON */
+
+.button {
+    background-color: var(--Very-light-gray);
+    border: none;
+    border-radius: 30px;
+    height: 45px;
+    width: 145px;
+}
+.b1 {
+    color: var(--Bright-orange);
+}
+.b2 {
+    color: var(--Dark-cyan);
+}
+.b3 {
+    color: var(--Very-dark-cyan);
+}
+
+/* HOVER */
+
+.button:hover {
+    cursor: pointer;
+    border: solid white;
+    color: var(--Very-light-gray);
+}
+.b1:hover {
+    background-color: var(--Bright-orange);
+}
+.b2:hover {
+    background-color: var(--Dark-cyan);
+}
+.b3:hover {
+    background-color: var(--Very-dark-cyan);
+}
+
+/* SIGNATURE */
+.attribution { 
+    font-size: 11px; text-align: center; }
+.attribution a { 
+    color: hsl(228, 45%, 44%); }
+.attribution {
+    margin-top: 10px;
+}
 
 /***** ID SELECTOR *****/
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 780px){
+
+    body{
+        height: 100%;
+
+    }
+
+    .container {
+      display: inline;
+
+    }
+
+    /* CARDS */
+    
+    img {
+        padding-bottom: 0;
+    }
+    
+
+.card1 {
+    background-color: var(--Bright-orange);
+    border-radius: 8px 8px 0 0;
+    padding: 30px 35px 30px 40px;
+
+}
+
+.card2 {
+    background-color: var(--Dark-cyan);
+    padding: 30px 35px 30px 40px;
+}
+
+.card3 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+    padding: 30px 35px 30px 40px;
+}
+
+.text {
+    color: var(--Transparent-white);
+    font-size: 15px;
+    line-height: 1.7;
+    padding-bottom: 40px;
+    width: 212px;
+}
+  }
